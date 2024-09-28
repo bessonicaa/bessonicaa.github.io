@@ -21,13 +21,13 @@ body {
 
 .console-header {
     font-family: 'Silkscreen', cursive;
-    color: #00ff00;
+    color: #005200;
     font-size: 24px;
 }
 
 .blinking-cursor {
     font-family: 'Silkscreen', cursive;
-    color: #00ff00;
+    color: #005200;
     animation: blink 1s infinite;
 }
 
@@ -111,4 +111,27 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* стиили переключателец языков */
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-btn {
+    background-color: #3b3f45;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: #4b5363;
 }

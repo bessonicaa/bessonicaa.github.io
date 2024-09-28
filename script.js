@@ -29,7 +29,10 @@ window.addEventListener('load', () => {
         if (lang === 'ru') {
             consoleElement.classList.add('ru-font');
 
-
+        } else {
+    consoleElement.classList.remove('ru-font');
+}
+}
 
     document.getElementById('en-btn').addEventListener('click', () => {
         switchLanguage('en');

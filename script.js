@@ -25,6 +25,12 @@ window.addEventListener('load', () => {
         document.getElementById('info').textContent = translations[lang].info;
         document.getElementById('visit-text').textContent = translations[lang].visitText;
         document.getElementById('telegram-button-text').textContent = translations[lang].buttonText;
+
+        if (lang === 'ru') {
+            consoleElement.classList.add('ru-font');
+        } else {
+            consoleElement.classList.remove('ru-font');
+        }
     }
 
 

@@ -31,8 +31,8 @@ window.addEventListener('load', () => {
 
         } else {
     consoleElement.classList.remove('ru-font');
+        }
     }
-}
 
     document.getElementById('en-btn').addEventListener('click', () => {
         switchLanguage('en');

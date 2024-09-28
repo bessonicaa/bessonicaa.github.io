@@ -1,0 +1,114 @@
+/* styles epta */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Coda Caption', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.console {
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.console-header {
+    font-family: 'Silkscreen', cursive;
+    color: #00ff00;
+    font-size: 24px;
+}
+
+.blinking-cursor {
+    font-family: 'Silkscreen', cursive;
+    color: #00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-block, .right-block {
+    width: 45%;
+}
+
+.left-block .intro, .left-block .info {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.intro {
+    animation: fadeInLeft 1.5s ease-in-out forwards;
+}
+
+.info {
+    animation: fadeInLeft 2s ease-in-out forwards;
+}
+
+.right-block .visit-text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    animation: fadeInRight 2.5s ease-in-out forwards;
+}
+
+.telegram-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #gray;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #3b3f45;
+    transition: background-color 0.3s;
+    animation: fadeInRight 3s ease-in-out forwards;
+}
+
+.telegram-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.telegram-button:hover {
+    background-color: #4b5363;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
